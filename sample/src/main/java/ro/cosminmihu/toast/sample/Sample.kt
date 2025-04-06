@@ -6,11 +6,6 @@ import android.view.Gravity
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import ro.cosminmihu.toast.Toast
 import ro.cosminmihu.toast.toast
 
 private const val TAG = "ToastSample"
@@ -33,25 +28,5 @@ fun SampleContext(context: Context) {
         }
     ) {
         Text(text = "Show toast using CONTEXT")
-    }
-}
-
-@Composable
-fun SampleCompose() {
-    var showToast by remember { mutableStateOf(false) }
-    Button(onClick = { showToast = true }) {
-        Text(text = "Show toast in COMPOSE")
-    }
-
-    Toast(showToast) {
-        message("Compose Toast \uD83C\uDF5E")
-        short()
-        onShown {
-            Log.d(TAG, "Compose Toast shown")
-        }
-        onDismiss {
-            Log.d(TAG, "Compose Toast dismissed")
-            showToast = false
-        }
     }
 }

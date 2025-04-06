@@ -36,7 +36,6 @@ class MainActivity : ComponentActivity() {
                             contentDescription = null
                         )
                         SampleContext(this@MainActivity)
-                        SampleCompose()
                     }
                 }
 
