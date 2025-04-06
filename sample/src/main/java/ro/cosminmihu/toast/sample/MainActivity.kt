@@ -36,10 +36,11 @@ class MainActivity : ComponentActivity() {
                             painter = painterResource(R.drawable.ic_launcher_foreground),
                             contentDescription = null
                         )
-                        SampleContext(this@MainActivity)
+                        SampleContextShortToast(this@MainActivity)
+                        SampleContextLongToast(this@MainActivity)
+                        SampleContextPositionToast(this@MainActivity)
                     }
                 }
-
             }
         }
     }
