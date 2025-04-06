@@ -15,8 +15,9 @@ Toast is a library that provides a simple Kotlin DSL for creating and displaying
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Gradle_logo.svg" width="100"/>
 
 ```kotlin  
-dependencies {  
- implementation("ro.cosminmihu.toast:toast:1.0.0")}  
+dependencies {
+    implementation("ro.cosminmihu.toast:toast:1.0.0")
+}  
 ```  
 
 ## 🧩 Integration
@@ -29,12 +30,12 @@ toast {
 	message(R.string.message_toast)
 	short() // by default
 	long()
-	onShown { /* toast is shown */ } // API level 30 (Android R) and above
-	onDismiss { /* toast is dismissed */ } // API level 30 (Android R) and above
 	position(Gravity.BOTTOM or Gravity.CENTER_HORIZONTAL) {
 		  xOffset = 0 // by default
 		  yOffset = 0 // by default
 	}
+    onShown { /* toast is shown */ }         // API level 30 (Android R) and above
+    onDismiss { /* toast is dismissed */ }   // API level 30 (Android R) and above
 }
 ```  
 
