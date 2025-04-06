@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("maven-publish")
 }
 
 kotlin {
@@ -37,6 +38,22 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+
+//        publications {
+//            register<MavenPublication>("release") {
+//                from(components["release"])
+//                groupId = "ro.cosminmihu"
+//                artifactId = "toast"
+//                version = libs.versions.toast.get()
+//            }
+//        }
     }
 }
 
