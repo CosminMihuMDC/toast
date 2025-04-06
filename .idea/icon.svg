@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <!-- Bread outline -->
+    <path fill="#F4D7A1" stroke="#8B5E3C" stroke-width="1.5" d="
+    M32,4
+    C20,4 10,10 10,18
+    C10,24 16,28 16,48
+    C16,54 20,58 26,58
+    H38
+    C44,58 48,54 48,48
+    C48,28 54,24 54,18
+    C54,10 44,4 32,4
+    Z" />
+
+    <!-- Crust shading -->
+    <path fill="#D6A86B" d="
+    M32,6
+    C21,6 12,11 12,18
+    C12,23 18,27 18,48
+    C18,52 21,56 26,56
+    H38
+    C43,56 46,52 46,48
+    C46,27 52,23 52,18
+    C52,11 43,6 32,6
+    Z" />
+
+    <!-- Crumbs -->
+    <circle cx="22" cy="26" r="1.5" fill="#8B5E3C" />
+    <circle cx="40" cy="30" r="1.2" fill="#8B5E3C" />
+    <circle cx="34" cy="38" r="2" fill="#8B5E3C" />
+    <circle cx="28" cy="32" r="1" fill="#8B5E3C" />
+</svg>
