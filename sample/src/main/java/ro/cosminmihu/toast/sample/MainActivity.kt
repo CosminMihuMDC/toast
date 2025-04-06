@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import ro.cosminmihu.toast.sample.theme.ToastTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

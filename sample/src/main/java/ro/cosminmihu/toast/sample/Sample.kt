@@ -23,7 +23,10 @@ fun SampleContext(context: Context) {
                 onDismiss {
                     Log.d(TAG, "Context Toast dismissed")
                 }
-                position(Gravity.BOTTOM)
+                position(Gravity.TOP or Gravity.CENTER_HORIZONTAL) {
+                    xOffset = 100
+                    yOffset = 200
+                }
             }
         }
     ) {

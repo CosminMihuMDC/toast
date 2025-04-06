@@ -5,10 +5,6 @@ import android.os.Build
 import android.view.Gravity
 import android.widget.Toast
 import androidx.annotation.StringRes
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.NonRestartableComposable
-import androidx.compose.ui.platform.LocalContext
 
 /**
  * A builder class for creating, customizing and showing Toast messages.
@@ -110,8 +106,8 @@ public class ToastBuilder(private val context: Context) {
      * A builder class for customizing the position of the Toast.
      */
     public class PositionBuilder {
-        internal var xOffset: Int = 0
-        internal var yOffset: Int = 0
+        public var xOffset: Int = 0
+        public var yOffset: Int = 0
     }
 }
 
