@@ -2,7 +2,7 @@
 [![Maven Central](https://img.shields.io/maven-central/v/ro.cosminmihu.toast/toast?logo=apachemaven&label=Maven%20Central&link=https://search.maven.org/artifact/ro.cosminmihu.toast/toast/)](https://search.maven.org/artifact/ro.cosminmihu.toast/toast)
 [![License](https://img.shields.io/github/license/CosminMihuMDC/toast?label=License&logo=lintcode&logoColor=white&color=#3DA639)](https://github.com/CosminMihuMDC/toast/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-F05032.svg?logo=git&logoColor=white)](http://makeapullrequest.com)
-![Platforms](https://img.shields.io/badge/Platforms-Android-brightgreen?logo=bambulab&logoColor=white&color=8d69e0)
+[![Android](https://img.shields.io/badge/Android-white?logo=android&logoColor=white&color=34A853)](https://developer.android.com)
 [![GitHub stars](https://img.shields.io/github/stars/CosminMihuMDC/toast)](https://github.com/CosminMihuMDC/toast)
 [![GitHub forks](https://img.shields.io/github/forks/CosminMihuMDC/toast)](https://github.com/CosminMihuMDC/toast/fork)
 
@@ -45,11 +45,7 @@ Feel free to send feedback or [file an issue](https://github.com/CosminMihuMDC/T
 
 ## 🙌 Acknowledgments
 
-[![Kotlin](https://img.shields.io/badge/2.1.20-white?logo=kotlin&logoColor=white&color=7F52FF)](http://kotlinlang.org)  
-[![Compose](https://img.shields.io/badge/1.7.8-white?logo=jetpackcompose&logoColor=white&color=4284F3)](https://developer.android.com/jetpack/androidx/releases/compose)  
-[![Android](https://img.shields.io/badge/Android%2015-white?logo=android&logoColor=white&color=34A853)](https://developer.android.com/about/versions/15)
-
-Thanks to JetBrains and Kotlin!
+Thanks to JetBrains and [Kotlin](https://kotlinlang.org)!
 
 ## 💸 Sponsors
 Toast is maintained and improved during nights, weekends and whenever team has free time. If you use Toast in your project, please consider sponsoring us.
