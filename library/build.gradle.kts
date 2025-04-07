@@ -1,12 +1,70 @@
+import com.vanniktech.maven.publish.SonatypeHost
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("maven-publish")
+    alias(libs.plugins.maven.publish)
 }
 
 kotlin {
     explicitApi()
+}
+
+val module = "toast"
+val artifact = "toast"
+group = "ro.cosminmihu.toast"
+version = "0.0.2"
+
+mavenPublishing {
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+
+    signAllPublications()
+
+    coordinates(group.toString(), artifact, version.toString())
+
+    pom {
+        name.set("Toast")
+        description.set("""Kotlin DSL Wrapper for Android Toast""".trimMargin())
+        inceptionYear.set("2025")
+        url.set("https://github.com/CosminMihuMDC/toast")
+
+        licenses {
+            license {
+                name = "The Apache Software License, Version 2.0"
+                url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        }
+
+        developers {
+            developer {
+                id = "Cosmin Mihu"
+                name = "Cosmin Mihu"
+                url = "https://www.cosminmihu.ro/"
+            }
+        }
+
+        scm {
+            url = "https://github.com/CosminMihuMDC/toast.git"
+            connection = "scm:git:git://github.com/CosminMihuMDC/toast.git"
+            developerConnection = "scm:git:git://github.com/CosminMihuMDC/toast.git"
+        }
+
+        issueManagement {
+            system = "GitHub Issues"
+            url = "https://github.com/CosminMihuMDC/toast/issues"
+        }
+
+        ciManagement {
+            system = "GitHub Actions"
+            url = "https://github.com/CosminMihuMDC/toast/actions"
+        }
+
+        distributionManagement {
+            downloadUrl = "https://github.com/CosminMihuMDC/toast/releases"
+        }
+    }
 }
 
 android {
@@ -38,22 +96,6 @@ android {
     }
     buildFeatures {
         compose = true
-    }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-
-//        publications {
-//            register<MavenPublication>("release") {
-//                from(components["release"])
-//                groupId = "ro.cosminmihu"
-//                artifactId = "toast"
-//                version = libs.versions.toast.get()
-//            }
-//        }
     }
 }
 
