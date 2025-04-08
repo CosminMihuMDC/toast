@@ -38,7 +38,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":library"))
+//    implementation(project(":library"))
+    implementation("ro.cosminmihu.toast:toast:0.0.4")
 
     // AndroidX.
     implementation(libs.androidx.core.ktx)
