@@ -14,7 +14,7 @@ kotlin {
 val module = "toast"
 val artifact = "toast"
 group = "ro.cosminmihu.toast"
-version = "0.0.5"
+version = "0.0.6"
 
 mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
@@ -96,6 +96,13 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
     }
 }
 
