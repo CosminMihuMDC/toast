@@ -14,7 +14,7 @@ kotlin {
 val module = "toast"
 val artifact = "toast"
 group = "ro.cosminmihu.toast"
-version = "0.0.6"
+version = "0.0.7"
 
 mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
@@ -80,7 +80,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -96,13 +96,6 @@ android {
     }
     buildFeatures {
         compose = true
-    }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
     }
 }
 
