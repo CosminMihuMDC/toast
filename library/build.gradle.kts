@@ -14,7 +14,7 @@ kotlin {
 val module = "toast"
 val artifact = "toast"
 group = "ro.cosminmihu.toast"
-version = "0.0.3"
+version = "0.0.5"
 
 mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
