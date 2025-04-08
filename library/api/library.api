@@ -1,0 +1,27 @@
+public final class ro/cosminmihu/toast/ToastBuilder {
+	public static final field $stable I
+	public fun <init> (Landroid/content/Context;)V
+	public final fun long ()V
+	public final fun message (I)V
+	public final fun message (Ljava/lang/String;)V
+	public final fun onDismiss (Lkotlin/jvm/functions/Function0;)V
+	public final fun onShown (Lkotlin/jvm/functions/Function0;)V
+	public final fun position (ILkotlin/jvm/functions/Function1;)V
+	public static synthetic fun position$default (Lro/cosminmihu/toast/ToastBuilder;ILkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public final fun short ()V
+	public final fun show ()V
+}
+
+public final class ro/cosminmihu/toast/ToastBuilder$PositionBuilder {
+	public static final field $stable I
+	public fun <init> ()V
+	public final fun getXOffset ()I
+	public final fun getYOffset ()I
+	public final fun setXOffset (I)V
+	public final fun setYOffset (I)V
+}
+
+public final class ro/cosminmihu/toast/ToastKt {
+	public static final fun toast (Landroid/content/Context;Lkotlin/jvm/functions/Function1;)V
+}
+
