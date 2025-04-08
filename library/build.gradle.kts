@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.maven.publish)
+    alias(libs.plugins.dokka)
 }
 
 kotlin {
@@ -67,6 +68,26 @@ mavenPublishing {
     }
 }
 
+tasks {
+    dokkaHtml {
+        moduleName = module
+        moduleVersion = project.version.toString()
+        outputDirectory = File(rootDir, "docs/html")
+    }
+
+    dokkaGfm {
+        moduleName = module
+        moduleVersion = project.version.toString()
+        outputDirectory = File(rootDir, "docs/gfm")
+    }
+
+    dokkaJekyll {
+        moduleName = module
+        moduleVersion = project.version.toString()
+        outputDirectory = File(rootDir, "docs/jekyll")
+    }
+}
+
 android {
     namespace = "ro.cosminmihu.toast"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
@@ -98,6 +119,7 @@ android {
         compose = true
     }
 }
+
 
 dependencies {
 
