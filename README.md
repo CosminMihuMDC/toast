@@ -1,8 +1,8 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/ro.cosminmihu.toast/toast?logo=apachemaven&label=Maven%20Central&link=https://search.maven.org/artifact/ro.cosminmihu.toast/toast/)](https://search.maven.org/artifact/ro.cosminmihu.toast/toast)
 [![License](https://img.shields.io/github/license/CosminMihuMDC/toast?label=License&logo=lintcode&logoColor=white&color=#3DA639)](https://github.com/CosminMihuMDC/toast/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-F05032.svg?logo=git&logoColor=white)](http://makeapullrequest.com)
 [![Android](https://img.shields.io/badge/Android-white?logo=android&logoColor=white&color=34A853)](https://developer.android.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-F05032.svg?logo=git&logoColor=white)](http://makeapullrequest.com)
 [![GitHub stars](https://img.shields.io/github/stars/CosminMihuMDC/toast)](https://github.com/CosminMihuMDC/toast)
 [![GitHub forks](https://img.shields.io/github/forks/CosminMihuMDC/toast)](https://github.com/CosminMihuMDC/toast/fork)
 
