@@ -16,7 +16,7 @@ Toast is a library that provides a simple Kotlin DSL for creating and displaying
 
 ```kotlin  
 dependencies {
-    implementation("ro.cosminmihu.toast:toast:1.0.0")
+    implementation("ro.cosminmihu.toast:toast:1.0.1")
 }  
 ```  
 
