@@ -1,4 +1,3 @@
-
 [![Maven Central](https://img.shields.io/maven-central/v/ro.cosminmihu.toast/toast?logo=apachemaven&label=Maven%20Central&link=https://search.maven.org/artifact/ro.cosminmihu.toast/toast/)](https://search.maven.org/artifact/ro.cosminmihu.toast/toast)
 [![License](https://img.shields.io/github/license/CosminMihuMDC/toast?label=License&logo=lintcode&logoColor=white&color=#3DA639)](https://github.com/CosminMihuMDC/toast/blob/main/LICENSE)
 [![Android](https://img.shields.io/badge/Android-white?logo=android&logoColor=white&color=34A853)](https://developer.android.com)
