@@ -1,0 +1,4 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:ro.cosminmihu.toast/ToastBuilder.PositionBuilder///PointingToDeclaration/ro/cosminmihu/toast/ToastBuilder.PositionBuilder.html
+ro.cosminmihu.toast
