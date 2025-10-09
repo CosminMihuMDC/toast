@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.maven.publish)
     alias(libs.plugins.dokka)
+    alias(libs.plugins.dokka.javadoc)
     alias(libs.plugins.binary.compatibility.validator)
 }
 
@@ -69,23 +70,15 @@ mavenPublishing {
     }
 }
 
-tasks {
-    dokkaHtml {
-        moduleName = module
-        moduleVersion = project.version.toString()
-        outputDirectory = File(rootDir, "docs/html")
-    }
+dokka {
+    moduleName = module
+    moduleVersion = project.version.toString()
 
-    dokkaGfm {
-        moduleName = module
-        moduleVersion = project.version.toString()
-        outputDirectory = File(rootDir, "docs/gfm")
+    dokkaPublications.html {
+        outputDirectory.set(File(rootDir, "docs/html"))
     }
-
-    dokkaJekyll {
-        moduleName = module
-        moduleVersion = project.version.toString()
-        outputDirectory = File(rootDir, "docs/jekyll")
+    dokkaPublications.javadoc {
+        outputDirectory.set(File(rootDir, "docs/javadoc"))
     }
 }
 
