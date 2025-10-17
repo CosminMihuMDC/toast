@@ -15,7 +15,7 @@ appcompat = "1.7.1"
 material = "1.13.0"
 maven-publish = "0.34.0"
 binary-compatibility-validator = "0.18.1"
-dokka = "2.1.0-Beta"
+dokka = "2.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
