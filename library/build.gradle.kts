@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import java.time.Year
 
 plugins {
     alias(libs.plugins.android.library)
@@ -72,12 +73,18 @@ mavenPublishing {
 dokka {
     moduleName = module
     moduleVersion = project.version.toString()
+    val docsDir = File(rootDir, "docs")
 
     dokkaPublications.html {
-        outputDirectory.set(File(rootDir, "docs/html"))
+        outputDirectory.set(File(docsDir, "html"))
     }
     dokkaPublications.javadoc {
-        outputDirectory.set(File(rootDir, "docs/javadoc"))
+        outputDirectory.set(File(docsDir, "javadoc"))
+    }
+
+    pluginsConfiguration.html {
+        customAssets.from(File(docsDir, "logo-icon.svg"))
+        footerMessage.set("© ${Year.now().value} Cosmin Mihu")
     }
 }
 
