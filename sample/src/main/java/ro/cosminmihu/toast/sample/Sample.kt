@@ -1,17 +1,18 @@
 package ro.cosminmihu.toast.sample
 
-import android.content.Context
 import android.util.Log
 import android.view.Gravity
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalContext
 import ro.cosminmihu.toast.toast
 
 private const val TAG = "ToastSample"
 
 @Composable
-fun SampleContextShortToast(context: Context) {
+fun SampleContextShortToast() {
+    val context = LocalContext.current
     Button(
         onClick = {
             context.toast {
@@ -31,7 +32,8 @@ fun SampleContextShortToast(context: Context) {
 }
 
 @Composable
-fun SampleContextLongToast(context: Context) {
+fun SampleContextLongToast() {
+    val context = LocalContext.current
     Button(
         onClick = {
             context.toast {
@@ -52,7 +54,8 @@ fun SampleContextLongToast(context: Context) {
 
 
 @Composable
-fun SampleContextPositionToast(context: Context) {
+fun SampleContextPositionToast() {
+    val context = LocalContext.current
     Button(
         onClick = {
             context.toast {

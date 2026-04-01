@@ -68,6 +68,7 @@ public class ToastBuilder(private val context: Context) {
 
     /**
      * Sets the position of the Toast on the screen.
+     * Note: [android.widget.Toast.setGravity] has no effect on apps targeting API 30 (Android R) and above.
      * @param gravity The gravity of the Toast.
      * @param build Customize the position.
      */
