@@ -83,6 +83,7 @@ public class ToastBuilder(private val context: Context) {
      * Shows the Toast.
      */
     public fun show() {
+        if (message == null) return
         val toast = Toast.makeText(context, message, duration)
         if (onShown != null || onDismiss != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -120,6 +121,6 @@ public class ToastBuilder(private val context: Context) {
  */
 public fun Context.toast(build: ToastBuilder.() -> Unit) {
     val builder = ToastBuilder(this)
-    builder.build()
+    builder.apply(build)
     builder.show()
 }
