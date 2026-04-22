@@ -5,6 +5,8 @@ import android.os.Build
 import android.view.Gravity
 import android.widget.Toast
 import androidx.annotation.StringRes
+import androidx.fragment.app.Fragment
+
 
 /**
  * A builder class for creating, customizing and showing Toast messages.
@@ -48,8 +50,7 @@ public class ToastBuilder(private val context: Context) {
 
     /**
      * Sets a callback to be invoked when the Toast is shown.
-     * This callback will only be invoked on API level 30 (Android R) and above.
-     * For older devices it will not be invoked.
+     * Note: only invoked on API level 30 (Android R) and above; silently ignored on older devices.
      * @param onShown The callback to be invoked when the Toast is shown.
      */
     public fun onShown(onShown: () -> Unit) {
@@ -58,8 +59,7 @@ public class ToastBuilder(private val context: Context) {
 
     /**
      * Sets a callback to be invoked when the Toast is dismissed.
-     * This callback will only be invoked on API level 30 (Android R) and above.
-     * For older devices it will not be invoked.
+     * Note: only invoked on API level 30 (Android R) and above; silently ignored on older devices.
      * @param onDismiss The callback to be invoked when the Toast is dismissed.
      */
     public fun onDismiss(onDismiss: () -> Unit) {
@@ -68,7 +68,8 @@ public class ToastBuilder(private val context: Context) {
 
     /**
      * Sets the position of the Toast on the screen.
-     * Note: [android.widget.Toast.setGravity] has no effect on apps targeting API 30 (Android R) and above.
+     * Note: [android.widget.Toast.setGravity] has no effect on apps targeting API 30 (Android R)
+     * and above. On those devices the position will be ignored.
      * @param gravity The gravity of the Toast.
      * @param build Customize the position.
      */
@@ -100,7 +101,9 @@ public class ToastBuilder(private val context: Context) {
                 )
             }
         }
-        toast.setGravity(gravity, xOffset, yOffset)
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
+            toast.setGravity(gravity, xOffset, yOffset)
+        }
         toast.show()
     }
 
@@ -113,14 +116,20 @@ public class ToastBuilder(private val context: Context) {
     }
 }
 
-
 /**
- * Extension function to show a Toast message.
+ * Extension function to show a Toast message from a [Context].
  * @receiver The [Context] in which the Toast is shown.
  * @param build Customize the Toast message.
  */
 public fun Context.toast(build: ToastBuilder.() -> Unit) {
-    val builder = ToastBuilder(this)
-    builder.apply(build)
-    builder.show()
+    ToastBuilder(this).apply(build).show()
+}
+
+/**
+ * Extension function to show a Toast message from a [Fragment].
+ * @receiver The [Fragment] in which the Toast is shown.
+ * @param build Customize the Toast message.
+ */
+public fun Fragment.toast(build: ToastBuilder.() -> Unit) {
+    ToastBuilder(requireContext()).apply(build).show()
 }

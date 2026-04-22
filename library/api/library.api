@@ -1,5 +1,4 @@
 public final class ro/cosminmihu/toast/ToastBuilder {
-	public static final field $stable I
 	public fun <init> (Landroid/content/Context;)V
 	public final fun long ()V
 	public final fun message (I)V
@@ -13,7 +12,6 @@ public final class ro/cosminmihu/toast/ToastBuilder {
 }
 
 public final class ro/cosminmihu/toast/ToastBuilder$PositionBuilder {
-	public static final field $stable I
 	public fun <init> ()V
 	public final fun getXOffset ()I
 	public final fun getYOffset ()I
@@ -23,5 +21,5 @@ public final class ro/cosminmihu/toast/ToastBuilder$PositionBuilder {
 
 public final class ro/cosminmihu/toast/ToastKt {
 	public static final fun toast (Landroid/content/Context;Lkotlin/jvm/functions/Function1;)V
+	public static final fun toast (Landroidx/fragment/app/Fragment;Lkotlin/jvm/functions/Function1;)V
 }
-
