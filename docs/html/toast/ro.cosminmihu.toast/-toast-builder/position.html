@@ -19,7 +19,6 @@
         }
       }
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
@@ -32,6 +31,7 @@
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
 <script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<link href="../../../images/logo-icon.svg">
 </head>
 <body>
 <div class="root">
@@ -44,11 +44,11 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-1.0.1        </div>
+1.0.2        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
-                        data-filter=":library/main">androidJvm</button>
+                        data-filter=":library/release">release</button>
             <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
                 <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
                         data-role="dropdown-toggle"
@@ -65,10 +65,10 @@
                     </div>
                         <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
                             <label class="checkbox">
-                                <input type="checkbox" class="checkbox--input" id=":library/main"
-                                       data-filter=":library/main"/>
+                                <input type="checkbox" class="checkbox--input" id=":library/release"
+                                       data-filter=":library/release"/>
                                 <span class="checkbox--icon"></span>
-                                androidJvm
+                                release
                             </label>
                         </li>
                 </ul>
@@ -104,12 +104,12 @@
         </nav>
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
-<div class="main-content" data-page-type="member" id="content" pageIds="toast::ro.cosminmihu.toast/ToastBuilder/position/#kotlin.Int#kotlin.Function1[ro.cosminmihu.toast.ToastBuilder.PositionBuilder,kotlin.Unit]/PointingToDeclaration//-2006881120">
+<div class="main-content" data-page-type="member" id="content" pageIds="toast::ro.cosminmihu.toast/ToastBuilder/position/#kotlin.Int#kotlin.Function1[ro.cosminmihu.toast.ToastBuilder.PositionBuilder,kotlin.Unit]/PointingToDeclaration//-183509009">
   <div class="breadcrumbs"><a href="../../../index.html">toast</a><span class="delimiter">/</span><a href="../index.html">ro.cosminmihu.toast</a><span class="delimiter">/</span><a href="index.html">ToastBuilder</a><span class="delimiter">/</span><span class="current">position</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>position</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="position.html"><span class="token function">position</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gravity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">build<span class="token operator">: </span><a href="-position-builder/index.html">ToastBuilder.PositionBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets the position of the Toast on the screen.</p><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":library/main" data-filterable-set=":library/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>gravity</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The gravity of the Toast.</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":library/main" data-filterable-set=":library/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>build</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Customize the position.</p></div></div></div></div></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="position.html"><span class="token function">position</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gravity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">build<span class="token operator">: </span><a href="-position-builder/index.html">ToastBuilder.PositionBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets the position of the Toast on the screen. Note: <a href="https://developer.android.com/reference/kotlin/android/widget/Toast.html#setgravity">android.widget.Toast.setGravity</a> has no effect on apps targeting API 30 (Android R) and above. On those devices the position will be ignored.</p><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":library/release" data-filterable-set=":library/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>gravity</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The gravity of the Toast.</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":library/release" data-filterable-set=":library/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>build</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Customize the position.</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <div class="footer--container">
@@ -120,7 +120,7 @@
                     <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
                         Dokka
                     </a>
-                    <div>© 2025 Copyright</div>
+                    <div>© 2026 Cosmin Mihu</div>
                 </div>
             </div>
         </div>

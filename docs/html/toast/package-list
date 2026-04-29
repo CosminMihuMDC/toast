@@ -2,6 +2,7 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:ro.cosminmihu.toast////PointingToDeclaration/toast/ro.cosminmihu.toast/index.html
 $dokka.location:ro.cosminmihu.toast//toast/android.content.Context#kotlin.Function1[ro.cosminmihu.toast.ToastBuilder,kotlin.Unit]/PointingToDeclaration/toast/ro.cosminmihu.toast/toast.html
+$dokka.location:ro.cosminmihu.toast//toast/androidx.fragment.app.Fragment#kotlin.Function1[ro.cosminmihu.toast.ToastBuilder,kotlin.Unit]/PointingToDeclaration/toast/ro.cosminmihu.toast/toast.html
 $dokka.location:ro.cosminmihu.toast/ToastBuilder.PositionBuilder///PointingToDeclaration/toast/ro.cosminmihu.toast/-toast-builder/-position-builder/index.html
 $dokka.location:ro.cosminmihu.toast/ToastBuilder.PositionBuilder/PositionBuilder/#/PointingToDeclaration/toast/ro.cosminmihu.toast/-toast-builder/-position-builder/-position-builder.html
 $dokka.location:ro.cosminmihu.toast/ToastBuilder.PositionBuilder/xOffset/#/PointingToDeclaration/toast/ro.cosminmihu.toast/-toast-builder/-position-builder/x-offset.html

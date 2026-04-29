@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!-- NewPage -->
 <html lang="en"><head>
-    <title>ToastBuilder 1.0.1 API </title>
+    <title>ToastBuilder 1.0.2 API </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="dc.created" content="2020-03-25">
     <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -431,7 +431,7 @@ public final class <span class="typeNameLabel"><a href=ToastBuilder.html>ToastBu
                                     <li class="blockList">
                                         <h4>onShown</h4>
                                         <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=ToastBuilder.html#onShown(kotlin.jvm.functions.Function0)>onShown</a>(Function0&lt;<a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onShown)</pre>
-                                        <div class="block"><p>Sets a callback to be invoked when the Toast is shown. This callback will only be invoked on API level 30 (Android R) and above. For older devices it will not be invoked.</p></div>
+                                        <div class="block"><p>Sets a callback to be invoked when the Toast is shown. Note: only invoked on API level 30 (Android R) and above; silently ignored on older devices.</p></div>
 
                                         <dl>
 
@@ -461,7 +461,7 @@ public final class <span class="typeNameLabel"><a href=ToastBuilder.html>ToastBu
                                     <li class="blockList">
                                         <h4>onDismiss</h4>
                                         <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=ToastBuilder.html#onDismiss(kotlin.jvm.functions.Function0)>onDismiss</a>(Function0&lt;<a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onDismiss)</pre>
-                                        <div class="block"><p>Sets a callback to be invoked when the Toast is dismissed. This callback will only be invoked on API level 30 (Android R) and above. For older devices it will not be invoked.</p></div>
+                                        <div class="block"><p>Sets a callback to be invoked when the Toast is dismissed. Note: only invoked on API level 30 (Android R) and above; silently ignored on older devices.</p></div>
 
                                         <dl>
 
@@ -537,7 +537,7 @@ public final class <span class="typeNameLabel"><a href=ToastBuilder.html>ToastBu
                                     <li class="blockList">
                                         <h4>position</h4>
                                         <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=ToastBuilder.html#position(java.lang.Integer,kotlin.jvm.functions.Function1)>position</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> gravity, Function1&lt;<a href=ToastBuilder.PositionBuilder.html>ToastBuilder.PositionBuilder</a>, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; build)</pre>
-                                        <div class="block"><p>Sets the position of the Toast on the screen.</p></div>
+                                        <div class="block"><p>Sets the position of the Toast on the screen. Note: <a href=https://developer.android.com/reference/kotlin/android/widget/Toast.html#setgravity>android.widget.Toast.setGravity</a> has no effect on apps targeting API 30 (Android R) and above. On those devices the position will be ignored.</p></div>
 
                                         <dl>
 
