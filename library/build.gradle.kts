@@ -20,7 +20,7 @@ kotlin {
 val module = "toast"
 val artifact = "toast"
 group = "ro.cosminmihu.toast"
-version = "1.0.2"
+version = "1.0.3"
 
 mavenPublishing {
     publishToMavenCentral()
