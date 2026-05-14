@@ -123,7 +123,7 @@ android {
 dependencies {
 
     // AndroidX.
-    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.core)
 
     // Fragment (for Fragment.toast extension).
     implementation(libs.androidx.fragment)
