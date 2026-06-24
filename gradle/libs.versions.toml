@@ -1,5 +1,5 @@
 [versions]
-android-gradle-plugin = "9.3.0-rc01"
+android-gradle-plugin = "9.4.0-alpha01"
 android-compile-sdk = "37"
 android-min-sdk = "26"
 android-target-sdk = "37"
@@ -14,7 +14,7 @@ binary-compatibility-validator = "0.18.1"
 dokka = "2.2.0"
 junit = "4.13.2"
 kotlin = "2.4.0"
-maven-publish = "0.36.0"
+maven-publish = "0.37.0"
 robolectric = "4.16.1"
 
 [libraries]
